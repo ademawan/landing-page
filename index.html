@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sepatu Olahraga</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+        <div class="circle"></div>
+      <header>
+        <a href="#" class="logoText"><img src="images/logo.png" class="logo" alt="">RogerDev</a>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Baru</a></li>
+          <li><a href="#">kontak</a></li>
+        </ul>
+      </header>
+      <div class="content">
+          <div class="textBox">
+              <h2>Rilexs With <span>ADIDAS</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nemo voluptatum accusamus tempore reiciendis, totam excepturi necessitatibus laudantium quia facere sequi! Architecto quisquam quibusdam saepe eius magni earum pariatur omnis?</p>
+              <a href="#">Lihat</a>
+          </div>
+          <div class="imgBox">
+              <img src="images/biru.png" class="sepatu" alt="">
+          </div>
+      </div>
+      <ul class="thumb">
+          <li><img src="images/biru.png" onclick="imgSlider('images/biru.png');changeColor('#0a1779')" alt=""></li>
+          <li><img src="images/hijau.png" onclick="imgSlider('images/hijau.png');changeColor('#056d1f')" alt=""></li>
+          <li><img src="images/hitam.png" onclick="imgSlider('images/hitam.png');changeColor('#302f31')" alt=""></li>
+          <li><img src="images/merah.png" onclick="imgSlider('images/merah.png');changeColor('#fa0d0da1')" alt=""></li>
+          <li><img src="images/orange.png" onclick="imgSlider('images/orange.png');changeColor('#f59930')" alt=""></li>
+          <li><img src="images/putih.png" onclick="imgSlider('images/putih.png');changeColor('#5e5e61')" alt=""></li>
+          <li><img src="images/ungu.png" onclick="imgSlider('images/ungu.png');changeColor('#a703e7')" alt=""></li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(apapun){
+            document.querySelector('.sepatu').src = apapun;
+        }
+
+        function changeColor(color){
+            const circle = document.querySelector('.circle');
+            const span = document.querySelectorAll('span')[0];
+            circle.style.background = color;
+            span.style.color= color;
+        }
+    
+    </script>
+  </body>
+</html>
